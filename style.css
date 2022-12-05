@@ -1,0 +1,64 @@
+:root {
+  --primary: crimson;
+  --dark: #1f2937;
+  --darker: #111827;
+  --light: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.container {
+  text-align: center;
+  background-color: var(--darker);
+  width: 100%;
+  max-width: 360px;
+  margin: 300px auto;
+  padding: 16px 32px;
+  border-radius: 16px;
+}
+
+.display {
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+
+  color: var(--light);
+  background-color: var(--primary);
+  margin: 0 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  transition: 0.4s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:active {
+  background-color: var(--dark);
+}
